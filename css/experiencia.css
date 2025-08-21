@@ -1,0 +1,75 @@
+.experiencia {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3, 1fr);
+  width: 1200px;
+  margin: 0 auto;
+  gap: 20px 100px;
+}
+
+.texto {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  align-self: start;
+  max-width: 40ch;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.ano{
+  position: absolute;
+  left: -60px;
+  top: 22px;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  position: relative;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.ano::before{
+  position: absolute;
+  content: "";
+  background: url("../img/detalhe.svg") no-repeat center;
+  width: 5px;
+  left: 55px;
+  top: -5px;
+  height: 30px;
+  z-index: -1;
+}
+
+.titulo-empresa{
+  font-size: 1.125rem;
+  grid-column: 1;
+}
+
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags span{
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.cargo{
+  font-weight: bold;
+  font-size: 1.125rem;
+  grid-column: 2;
+}
+
+.experiencia-desc{
+  max-width: 40ch;
+  font-size: 1.125rem;
+}
+
+strong {
+  color: rgba(0, 0, 0, 0.9);
+}

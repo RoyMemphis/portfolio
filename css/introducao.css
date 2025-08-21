@@ -6,6 +6,7 @@
   grid-template-columns: 1fr 2fr;
   gap: 100px;
   align-items: center;
+  margin-bottom: 80px;
 }
 
 .introducao h1 {
@@ -32,24 +33,7 @@
   color: #525252;
 }
 
-.introducao-exp {
-  font-size: 9rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: rgba(0, 0, 0, 0.2);
-}
 
-.introducao-resumo {
-  margin-top: 20px;
-  font-size: 1.5rem;
-  align-self: start;
-  color: rgba(0, 0, 0, 0.7);
-}
-
-.introducao-resumo span {
-  font-weight: bold;
-  color: rgba(0, 0, 0, 1);
-}
 
 @media (max-width: 1000px) {
   .introducao h1 {
