@@ -1,0 +1,36 @@
+.formacao-bg {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
+
+  margin: 0px;
+  background-color: #141414;
+  height: 100%;
+  width: 100%;
+}
+
+.formacao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr auto;
+  width: 1200px;
+  margin: 0 auto;
+  gap: 20px 100px;
+  margin-bottom: 50px;
+}
+
+.formacao .texto {
+  color: rgba( 255, 255, 255, 0.5);
+  text-align: left;
+  max-width: 50ch;
+}
+
+.formacao .texto strong{
+  color: white;
+}
+
+.formacao h2 {
+  color: #000;
+}

@@ -1,10 +1,11 @@
 .experiencia {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr auto;
   width: 1200px;
   margin: 0 auto;
   gap: 20px 100px;
+  margin-bottom: 50px;
 }
 
 .texto {

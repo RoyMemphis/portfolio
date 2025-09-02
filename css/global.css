@@ -2,7 +2,8 @@ body {
   height: 100%;
   font-family: "Fira Sans", Arial, sans-serif;
   background: #fff;
-  color: #141414;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -24,6 +25,7 @@ img {
 }
 
 .subtitulo {
+  text-align: left;
   font-size: 9rem;
   text-transform: uppercase;
   font-weight: bold;
