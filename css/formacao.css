@@ -1,10 +1,6 @@
 .formacao-bg {
-  background: #fff;
-  width: 100%;
-  text-align: center;
   padding: 40px;
   box-sizing: border-box;
-
   margin: 0px;
   background-color: #141414;
   height: 100%;
@@ -22,15 +18,128 @@
 }
 
 .formacao .texto {
-  color: rgba( 255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   text-align: left;
   max-width: 50ch;
 }
 
-.formacao .texto strong{
+.formacao .texto strong {
   color: white;
 }
 
 .formacao h2 {
   color: #000;
+}
+
+.formacao-escolas {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: 380px 1fr;
+  position: relative;
+  border-radius: 5px;
+  justify-self: left;
+  text-align: left;
+}
+
+.titulo-formacao {
+  margin-bottom: 10px;
+}
+
+.formacao-tipo {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #a3a3a3;
+}
+
+.formacao-escola {
+  font-size: 1.25rem;
+  color: #a3a3a3;
+}
+
+.formacao-titulo {
+  max-width: 17ch;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.formacao-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #090909;
+  margin: 0px 5px 0px 5px;
+  border-radius: 5px;
+  padding: 20px;
+  justify-content: space-between;
+  height: 180px;
+  width: 180px;
+}
+
+.extra {
+  margin: 30px 0px 0px 0px;
+  color: #fff;
+}
+
+.extra h3 {
+  color: #8f8f8f;
+  font-size: 1rem;
+  margin: 10px;
+  line-height: 1.4;
+}
+
+.extra li,
+.extra ul 
+.extra span{
+  padding: 10px;
+  font-size: 1.125rem;
+}
+
+.cursos span {
+  align-self: flex-end;
+}
+
+.cursos-titulo {
+  position: relative;
+}
+
+.cursos-titulo::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("../img/cursos.svg") no-repeat center;
+  width: 130px;
+  height: 100px;
+  z-index: 1;
+  top: -40px;
+  left: -82px;
+}
+
+.idioma-titulo {
+  position: relative;
+}
+
+.idioma-titulo::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("../img/idiomas.svg") no-repeat center;
+  width: 130px;
+  height: 100px;
+  z-index: 1;
+  top: -40px;
+  left: -82px;
+}
+
+.idiomas{
+  margin: 40px 0px 0px 0px;
+}
+
+.idiomas span {
+  align-self: flex-end;
+  color: #8f8f8f;
+}
+
+.cursos ul li span {
+  float: right;
+  color: #8f8f8f;
 }
