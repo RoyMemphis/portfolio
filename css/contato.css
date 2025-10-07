@@ -56,4 +56,9 @@
   .contato{
     gap: 40px;
   }
+
+  .contato p, .contato div p{
+    font-size: 1.125rem;
+  }
+
 }

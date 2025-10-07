@@ -97,3 +97,15 @@ strong {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 420px) {
+  .experiencia{
+    grid-template-columns: 1fr;
+  }
+  .cargo{
+    grid-column: 1;
+  }
+  .experiencia{
+    padding: 30px 20px;
+  }
+}

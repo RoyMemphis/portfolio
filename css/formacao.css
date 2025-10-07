@@ -153,13 +153,17 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-}
 
-@media(max-width: 1400px){
   .formacao{
     max-width: 1000px;
     grid-template-columns: 1fr;
     max-width: auto;
     margin: 0;
+  }
+}
+
+@media(max-width: 420px){
+  .formacao-bg{
+    padding: 70px 20px;
   }
 }
