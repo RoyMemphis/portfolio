@@ -37,7 +37,6 @@ img {
 @media (max-width: 1400px) {
   .subtitulo {
     font-size: 5rem;
-    max-width: 10ch !important;
+    max-width: 12ch !important;
   }
-
 }
