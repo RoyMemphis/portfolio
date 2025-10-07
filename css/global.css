@@ -43,6 +43,6 @@ img {
 
 @media (max-width: 420px) {
   .subtitulo{
-    font-size: 2.5rem;
+    font-size: 32px !important;
   }
 }

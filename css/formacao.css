@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-.subtitulo{
+.subtitulo {
   max-width: 3.3ch;
 }
 
@@ -154,16 +154,35 @@
     justify-content: space-between;
   }
 
-  .formacao{
+  .formacao {
     max-width: 1000px;
     grid-template-columns: 1fr;
     max-width: auto;
     margin: 0;
   }
+
+  .subtitulo{
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+
 }
 
-@media(max-width: 420px){
-  .formacao-bg{
+@media (max-width: 420px) {
+  .formacao-bg {
     padding: 70px 20px;
+  }
+
+  .cursos-titulo::before {
+    position: sticky;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 10px;
+  }
+
+  .idioma-titulo::before {
+    position: sticky;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 10px;
   }
 }

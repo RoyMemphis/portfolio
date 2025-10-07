@@ -77,6 +77,7 @@ strong {
 
 .subtitulo.sub-exp {
   max-width: 4ch;
+  color: rgba(0, 0, 0, 0.2) !important;
 }
 
 @media (max-width: 1400px) {
@@ -99,13 +100,13 @@ strong {
 }
 
 @media (max-width: 420px) {
-  .experiencia{
+  .experiencia {
     grid-template-columns: 1fr;
   }
-  .cargo{
+  .cargo {
     grid-column: 1;
   }
-  .experiencia{
+  .experiencia {
     padding: 30px 20px;
   }
 }
