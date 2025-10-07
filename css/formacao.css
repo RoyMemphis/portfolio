@@ -7,11 +7,15 @@
   width: 100%;
 }
 
+.subtitulo{
+  max-width: 3.3ch;
+}
+
 .formacao {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 1fr auto;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   gap: 20px 100px;
   margin-bottom: 50px;
@@ -88,8 +92,7 @@
 }
 
 .extra li,
-.extra ul 
-.extra span{
+.extra ul .extra span {
   padding: 10px;
   font-size: 1.125rem;
 }
@@ -130,7 +133,7 @@
   left: -82px;
 }
 
-.idiomas{
+.idiomas {
   margin: 40px 0px 0px 0px;
 }
 
@@ -140,6 +143,23 @@
 }
 
 .cursos ul li span {
-  float: right;
+  justify-content: space-between;
   color: #8f8f8f;
+}
+
+@media (max-width: 1400px) {
+  .cursos li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media(max-width: 1400px){
+  .formacao{
+    max-width: 1000px;
+    grid-template-columns: 1fr;
+    max-width: auto;
+    margin: 0;
+  }
 }

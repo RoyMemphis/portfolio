@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 1fr auto;
-  width: 1200px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 0px auto;
   gap: 20px 100px;
   margin-bottom: 50px;
 }
@@ -16,7 +16,7 @@
   color: rgba(0, 0, 0, 0.8);
 }
 
-.ano{
+.ano {
   position: absolute;
   left: -60px;
   top: 22px;
@@ -32,45 +32,68 @@
   gap: 10px;
 }
 
-.ano::before{
+.ano::before {
   position: absolute;
   content: "";
   background: url("../img/detalhe.svg") no-repeat center;
-  width: 5px;
+  max-width: 5px;
   left: 55px;
   top: -5px;
   height: 30px;
   z-index: -1;
 }
 
-.titulo-empresa{
+.titulo-empresa {
   font-size: 1.125rem;
   grid-column: 1;
 }
 
-.tags{
+.tags {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.tags span{
+.tags span {
   padding: 10px 20px;
   background-color: #fff;
   border-radius: 5px;
 }
 
-.cargo{
+.cargo {
   font-weight: bold;
   font-size: 1.125rem;
   grid-column: 2;
 }
 
-.experiencia-desc{
+.experiencia-desc {
   max-width: 40ch;
   font-size: 1.125rem;
 }
 
 strong {
   color: rgba(0, 0, 0, 0.9);
+}
+
+.subtitulo.sub-exp {
+  max-width: 4ch;
+}
+
+@media (max-width: 1400px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    padding: 40px;
+  }
+
+  .experiencia-desc {
+    min-width: 25ch;
+  }
+
+  .ano {
+    position: static;
+  }
+
+  .empresa {
+    grid-template-columns: 1fr;
+  }
 }

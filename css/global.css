@@ -31,4 +31,13 @@ img {
   font-weight: bold;
   grid-row: 1 / 4;
   color: rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
+}
+
+@media (max-width: 1400px) {
+  .subtitulo {
+    font-size: 5rem;
+    max-width: 10ch !important;
+  }
+
 }
