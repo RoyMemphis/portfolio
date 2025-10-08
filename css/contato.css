@@ -29,11 +29,17 @@
   justify-self: center;
 }
 
-.contato div p {
+.contato div p,
+.contato div a {
   color: white;
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 2;
+  justify-self: center;
+}
+
+.contato div a {
+  display: block;
 }
 
 .direitos-reservados {
@@ -45,20 +51,21 @@
   gap: 20px 100px;
 }
 
-@media (max-width: 800px){
-  .contato{
+@media (max-width: 800px) {
+  .contato {
     grid-template-columns: 1fr;
     padding: 0px 30px;
   }
 }
 
-@media (max-width: 400px){
-  .contato{
+@media (max-width: 500px) {
+  .contato {
     gap: 40px;
   }
 
-  .contato p, .contato div p{
+  .contato p,
+  .contato div p,
+  .contato div a {
     font-size: 1.125rem;
   }
-
 }

@@ -1,10 +1,22 @@
 .formacao-bg {
-  padding: 40px;
+  padding: 140px 40px;
   box-sizing: border-box;
   margin: 0px;
   background-color: #141414;
   height: 100%;
   width: 100%;
+  position: relative;
+}
+
+.formacao-bg::after{
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 100px;
 }
 
 .subtitulo {
@@ -167,9 +179,14 @@
 
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .formacao-bg {
     padding: 70px 20px;
+  }
+
+  .formacao-bg::after{
+      transform: rotate(45deg);
+      left: 10%;
   }
 
   .cursos-titulo::before {

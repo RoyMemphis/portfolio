@@ -22,6 +22,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .subtitulo {
@@ -41,7 +42,7 @@ img {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .subtitulo{
     font-size: 32px !important;
   }

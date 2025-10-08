@@ -99,7 +99,7 @@ strong {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .experiencia {
     grid-template-columns: 1fr;
   }
